@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>JavaScript Events</title>
+  <link rel="stylesheet" href="./base.css">
+  <script src="./events solution.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2>Events exercise</h2>
+    <p>
+      How to use Events exercise?<br>
+      Clone the git from <a href="https://github.com/rekapalanki" target="_blank">Github/rekapalanki</a> 
+      to your computer via <a href="https://cli.github.com/" target="_blank">CLI</a>.
+    </p>
+    <p>
+  1. Event listener on a single element <br>
+Select "Click Me" button <br>
+Make a function that says "It got clicked!" <br>
+Attach a listener to the button <br>
+<br>
+Hints <br>
+The object selection operation is executed on the document object. <br>
+The addeventListener() method accepts two arguments: event type and 
+ operation to be executed. <br>
+When calling the event listener, we do not type () after the 
+ function, cos' that way the function will run even if the event 
+ does not occurr. <br>
+<br>
+  2. Event listener on multiple elements <br>
+Select all Buy buttons <br>
+Make a buyItem function that returns the name and the price of the item. <br>
+Loop over the buttons and attach a listener. <br>
+<br>
+Hints <br>
+For traversing the DOM, investigate the element in the DOM tree by 
+ right mouse click -> Investigate. This opens up the DevTools. <br>
+To get the DOM tree of the parent element, you can always refer to it
+ in the console with $0.parentElement. $0 refers to the element that is 
+ selected on the Elements tab. <br>
+<br>
+3. DOM manipulation - adding an element <br>
+Show the price of the individual items as a paragraph element within each card <br>
+<br>
+4. DOM manipulation. Applying computational logic <br>
+Add a counter to each items with + / - options and additional Buy button. <br>
+<br>
+4.a. After clicking Buy button, default input value to 0. 
+<br>
+5. DOM manipulation - hiding elements (Optional) <br>
+Hide the unnecessary Buy buttons <br>
+<br>
+6. DOM manipulation - adding an element (Optional) <br>
+Add an image element to the document representing a photo. You may choose 
+<a href="https://picsum.photos/200">https://picsum.photos/200</a> <br>
+<br>
+7. Event listener <br>
+Count into the console how many times the mouse enters into the image <br>
+    </p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <button class="butts">Click me!</button>
+    </div>
+    <div class="card">
+      <button class="cool">Me too!</button>
+    </div>
+  </div>
+  <div class="cards">
+    <div class="card item">
+      <h2>Item 1</h2><button data-price="110" class="buy">Buy</button>
+    </div>
+    <div class="card item">
+      <h2>Item 2</h2><button data-price="220" class="buy">Buy</button>
+    </div>
+    <div class="card item">
+      <h2>Item 3</h2><button data-price="330" class="buy">Buy</button>
+    </div>
+    <div class="card item">
+      <h2>Item 4</h2><button data-price="440" class="buy">Buy</button>
+    </div>
+    <div class="card item">
+      <h2>Item 5</h2><button data-price="550" class="buy">Buy</button>
+    </div>
+    <div class="card item">
+      <h2>Item 6</h2><button data-price="660" class="buy">Buy</button>
+    </div>
+    <div class="card item">
+      <h2>Item 7</h2><button data-price="770" class="buy">Buy</button>
+    </div>
+    <div class="card item">
+      <h2>Item 8</h2><button data-price="880" class="buy">Buy</button>
+    </div>
+    <div class="card item">
+      <h2>Item 9</h2><button data-price="990" class="buy">Buy</button>
+    </div>
+    <div class="card item">
+      <h2>Item 10</h2><button data-price="1100" class="buy">Buy</button>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>HTML Forms</title>
+  <link rel="stylesheet" href="./base.css">
+  <script src="./forms exercise.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <a class="kilipue" href="http://www.kilipuedesign.com">kilipuedesign</a>
+    <a class="inputTypes" href="https://www.w3schools.com/html/html_form_input_types.asp">input types w3s</a>
+    <!-- Create a form with following elements: Name input, Email input, Agree checkbox, Submit button-->
+    <form name="signup">
+      <label for="name">Name:</label> <input type="text" name="name" id="name" placeholder="Your name">
+      <label for="email">E-mail:</label> <input type="email" name="email" id="email" placeholder="E-mail">
+      <label for="newPw">New password:</label> <input type="password" name="newPw" id="newPw">
+      <label for="confirmPw">Confirm new password:</label> <input type="password" name="confirmPw" id="confirmPw">
+      <label for="birth">Date of birth:</label> <input type="date" name="birth" id="birth" min="1900-00-01"
+        max="2021-09-30">
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+      </select>
+      <p>My area of interests: <br>
+        <input type="checkbox" name="interests" id="sports"><label for="sports"> Sports</label> <br>
+        <input type="checkbox" name="interests" id="crafting"><label for="crafting"> Crafting</label> <br>
+        <input type="checkbox" name="interests" id="react"><label for="react"> React scripting</label> <br>
+      </p>
+      <p> How do you prefer to get contacted?<br>
+        <input type="radio" name="contact" id="email"><label for="email"> Email</label> <br>
+        <input type="radio" name="contact" id="mobile"><label for="mobile"> Mobile</label> <br>
+        <input type="radio" name="contact" id="chat"><label for="chat"> Chat</label> <br>
+      </p>
+      <input type="checkbox" name="agree" id="agree" required>
+      <label for="agree">I agree the terms and conditions</label>
+      <hr>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+
+    </form>
+  </div>
+</body>
+
+</html>
